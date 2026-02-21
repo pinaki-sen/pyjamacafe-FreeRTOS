@@ -37,6 +37,9 @@
 - Rest of config macros are added
 
 ## 4. Enabling heap for dynamic memory allocation
+- task object file is added
+- heap_4 is added
+- memset is defined in portFunctions.c
 
 ## 5. Setting the Scheduling Rate
 
