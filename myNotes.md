@@ -18,3 +18,5 @@
 
 # Section-4: Integrating the FreeRTOS Kernel
 ## 1. Starting to Integrate the FreeRTOS-Kernel
+- added FreeRTOSConfig.h header in /port dir, here we will provide configurations like priority, tasks, stacks etc
+- added path of the headers in Make to compile the files from FreeRTOS-kernel, provided the path to compile cmd

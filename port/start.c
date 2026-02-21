@@ -1,9 +1,8 @@
-void func() {
-    return;
-}
+#include "FreeRTOS.h"
+#include "task.h"
 
 void start() {
 
-    func();
+    vTaskStartScheduler();
     return;
 }
