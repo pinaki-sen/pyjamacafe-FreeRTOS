@@ -42,6 +42,8 @@
 - memset is defined in portFunctions.c
 
 ## 5. Setting the Scheduling Rate
+- port file is included for compilation
+- CPU clock speed and Tick rate also configured
 
 ## 6. Getting the Kernel to compile successfully
 
