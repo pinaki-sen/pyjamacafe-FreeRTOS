@@ -46,7 +46,7 @@
 - CPU clock speed and Tick rate also configured
 
 ## 6. Getting the Kernel to compile successfully
-
+- list source file path is added. Now we are able to compile successfully
 
 ---
 ---
