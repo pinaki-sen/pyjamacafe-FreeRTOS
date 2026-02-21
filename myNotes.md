@@ -34,6 +34,7 @@
 - Sycall interrupt priority, stack size etc needs to be defined in the config file. Still a lot of config macros need to be defined.
 
 ## 3. Finding and adding the FreeRTOSConfig
+- Rest of config macros are added
 
 ## 4. Enabling heap for dynamic memory allocation
 
