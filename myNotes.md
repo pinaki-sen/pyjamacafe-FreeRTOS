@@ -51,39 +51,40 @@
 ---
 ---
 # Section-5: Investigating Runtime Instabilities
-## 1. Running the compiled binary
+### 1. Running the compiled binary
 
-## 2. Investigating why task is not getting created
 
-## 3. GDB Investgation - Memory Allocation failure
+### 2. Investigating why task is not getting created
 
-## 4. Correcting the boot-up code and memory init
+### 3. GDB Investgation - Memory Allocation failure
+
+### 4. Correcting the boot-up code and memory init
 
 
 ---
 ---
 # Section-6: Debugging and Getting the Scheduler to run
-## 1. Installing the Exception Handlers
+### 1. Installing the Exception Handlers
 
-## 2. Hunting the cause for the Hard Fault
+### 2. Hunting the cause for the Hard Fault
 
-## 3. Getting the Scheduling to work
+### 3. Getting the Scheduling to work
 
 
 ---
 ---
 # Section-7 : Fixing errors and Testing on real hardware
-## 1. Correcting the Linker script and reasoning about SVC
+### 1. Correcting the Linker script and reasoning about SVC
 
-## 2. Working with Hardware, uploading the code
+### 2. Working with Hardware, uploading the code
 
-## 3. Loading the code to board and exploring task scheduling
+### 3. Loading the code to board and exploring task scheduling
 
 
 ---
 ---
 # Section-8: Conclusion and Next Steps
-## 1. Exploring the Scheduler implementation
+### 1. Exploring the Scheduler implementation
 
-## 2. Summary and What to pursue next
+### 2. Summary and What to pursue next
 
