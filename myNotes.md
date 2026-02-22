@@ -52,7 +52,7 @@
 ---
 # Section-5: Investigating Runtime Instabilities
 ### 1. Running the compiled binary
-
+- started the execution on qemu, but as soon as vTaskStartScheduler starts executing, CPU faces hardfault and QEMU crashes, probably because no task is initialized yet.
 
 ### 2. Investigating why task is not getting created
 
