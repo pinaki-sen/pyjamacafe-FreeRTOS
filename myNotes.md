@@ -55,6 +55,13 @@
 - started the execution on qemu, but as soon as vTaskStartScheduler starts executing, CPU faces hardfault and QEMU crashes, probably because no task is initialized yet.
 
 ### 2. Investigating why task is not getting created
+- Created two tasks to increase volatile variables
+- called xTaskCreate in the start function for the two newly added tasks
+- details of params passed to the xTaskCreate -- the task function pointer and other configuration params like task name, stack depth, priority etc can be found in tasks.c
+
+- Now onwards, we will now use the GDB debug tool in Visual Studio, as configured in the .vscode it gives better debugging capability through the GUI tool on Visual Studio itself
+- Now the xTaskCreate returns -1, which needs to be analyzed and debugged further.
+
 
 ### 3. GDB Investgation - Memory Allocation failure
 
