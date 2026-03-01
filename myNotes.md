@@ -64,6 +64,7 @@
 
 
 ### 3. GDB Investgation - Memory Allocation failure
+- seems like the Global variables are not holding its stored data. Showing zeros upon being added to Watch.
 
 ### 4. Correcting the boot-up code and memory init
 
