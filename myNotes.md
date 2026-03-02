@@ -66,8 +66,13 @@
 ### 3. GDB Investgation - Memory Allocation failure
 - seems like the Global variables are not holding its stored data. Showing zeros upon being added to Watch.
 
-### 4. Correcting the boot-up code and memory init
 
+### 4. Correcting the boot-up code and memory init
+- The issue was identified, why global varibles were not holding on to the data it was initialized with. The data memory was NOT configured in the Linker script map.ld
+- Not having data memory initialized, it was trying to write on a read-only address. So the writes were not taking any effect.
+
+- As the fix of this issue, text, data and BSS section is added in the Linker (details of these changes will be better understood from the Linker script playlist)
+- Added code in start() function to copy data from Flash to RAM.
 
 ---
 ---
