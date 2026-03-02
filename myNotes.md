@@ -83,9 +83,14 @@
 - systick handler is installed for sceduling purpose but the Hardfault occured in the previous section is persistent.
 
 ### 2. Hunting the cause for the Hard Fault
+- Probably, something is wrong with the assembly code inside prvPortStartFirstTask, which is triggering the hard fault.
 
 ### 3. Getting the Scheduling to work
+- If priority of the SVC call is same as priority of current execution, it will cause hard fault. Bottom line, SVC call need to have higher interrupt.
 
+- Now xPortStartScheduler is directly called in start function to start scheduling the tasks.
+- xPortPendSVHandler, vPortSVCHandler are also added in the interrupt vector.
+- Now if we put breakpoint in our vTask1 and vTask2, we will see it will hit the breakpoint in Round Robin fashion. Means Scheduler is up and running.
 
 ---
 ---
