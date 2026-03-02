@@ -78,6 +78,9 @@
 ---
 # Section-6: Debugging and Getting the Scheduler to run
 ### 1. Installing the Exception Handlers
+- systick handler is ported from FreeRTOS kernel.
+- In the interrupt vector, 15th Offset is set to the systick handler. Others in the middle is set to deafult which points to a branch instruction.
+- systick handler is installed for sceduling purpose but the Hardfault occured in the previous section is persistent.
 
 ### 2. Hunting the cause for the Hard Fault
 
