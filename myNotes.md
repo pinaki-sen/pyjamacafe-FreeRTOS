@@ -96,6 +96,7 @@
 ---
 # Section-7 : Fixing errors and Testing on real hardware
 ### 1. Correcting the Linker script and reasoning about SVC
+- Linker script is fixed
 
 ### 2. Working with Hardware, uploading the code
 
