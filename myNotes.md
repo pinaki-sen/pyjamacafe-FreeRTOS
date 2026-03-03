@@ -99,6 +99,8 @@
 - Linker script is fixed
 
 ### 2. Working with Hardware, uploading the code
+- Although in the datasheet, it has been mentioned that the actual Flash starting addressed is aliased at address 0x00, it is NOT working while trying to flash binary using that.
+- Therefore in the map file, FLASH origin has been changed to addr 0x08000000
 
 ### 3. Loading the code to board and exploring task scheduling
 
